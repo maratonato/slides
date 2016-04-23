@@ -1,245 +1,578 @@
-<!doctype html>
-<html lang="en">
+		<!doctype html>
+		<html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+			<head>
+				<meta charset="utf-8">
 
-		<title>Competitive Programming</title>
+				<title>Competitive Programming</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+				<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+				<meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+				<meta name="apple-mobile-web-app-capable" content="yes">
+				<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+				<link rel="stylesheet" href="css/reveal.css">
+				<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+				<!-- Code syntax highlighting -->
+				<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+				<!-- Printing and PDF exports -->
+				<script>
+					var link = document.createElement( 'link' );
+					link.rel = 'stylesheet';
+					link.type = 'text/css';
+					link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+					document.getElementsByTagName( 'head' )[0].appendChild( link );
+				</script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+				<!--[if lt IE 9]>
+				<script src="lib/js/html5shiv.js"></script>
+				<![endif]-->
+			</head>
 
-	<body>
+			<body>
 
-		<div class="reveal">
+				<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides"> 
-				<section>
-					<h2>Competitive programming</h2>
-					<img width="438" height="438" data-src="img/logoacm.png" alt="Down arrow">
-					<p>
-						<small>Created by <a href="http://herodrigues.me">Herinson Rodrigues</a> </small>
-					</p>
+					<!-- Any section element inside of this container is displayed as a slide -->
+					<div class="slides"> 
+						<section>
+							<h2>Competitive programming</h2>
+							<img width="438" height="438" data-src="img/logoacm.png" alt="Down arrow">
+							<p>
+								<small>Created by <a href="http://herodrigues.me">Herinson Rodrigues</b></a> </small>
+							</p>
+						</section>
+
+						<section>
+							<h2>Conteúdo</h2>
+							<ul>
+								<li>Introdução</li>
+								<li>Anatomia de um problema</li>
+								<li>Rotinas de I/O</li>
+								<li>Onde treinar</li>
+							</ul>
+						</section>
+
+						<!-- Example of nested vertical slides -->
+						<section>
+							<section>
+								<h2>Introdução</h2>
+								<br>
+								<p>Fato: "<i>ACM-ICPC é uma competição de programação disputada</i>"</p>
+								<img width="638" height="338"  data-src="img/winners.jpg">
+							</section>
+							<section>
+								<h2>O que veremos pela frente?</h2>
+								<p><i>"Dado um conjunto de problemas bastante conhecidos em Ciência da Computação, seu trabalho é resolvê-los o mais rápido que você puder!"</i></p>
+								<img width="638" height="338"  data-src="img/typing.gif">
+							</section>
+							<section>
+								<h2>Como assim?</h2>
+								<ul>
+									<li>Os problemas já estão resolvidos</li>
+									<li>Pelo menos os <i>problem setters</i> já resolveram os problemas</li>
+								</ul>
+								<img width="538" height="278"  data-src="img/problem-solved.jpg">
+							</section>
+						</section>
+
+						<section>
+							<section>
+								<h2>Anatomia de um problema</h2>
+								<img width="638" height="378"  data-src="img/anatomy.jpeg">
+							</section>
+							<section>
+								<h3>O problema</h3>
+								<img data-src="img/prob1.png">
+							</section>
+							<section>
+								<h3>Bullshit!</h3>
+								<img data-src="img/prob1-1.png">
+							</section>
+							<section>
+								<h3>Informações relevantes!</h3>
+								<img data-src="img/prob1-2.png">
+							</section>
+							<section>
+								<h3>Entrada e saída</h3>
+								<img data-src="img/prob2.png">
+							</section>
+							<section>
+								<h3>Restrições e exemplo de I/O</h3>
+								<img data-src="img/prob3.png">
+							</section>
+							<section>
+								<h2>O que isso significa?</h2>
+								<ul>
+									<li>Seu programa deve produzir a mesma saída que o <i>problem setter</i> produziu utilizando uma entrada secreta</li>
+									<li>Seu programa deve resolver o problema dentre um limite de tempo</li>
+								</ul>
+							</section>
+						</section>
+
+						<section>
+							<section>
+								<h2>Rotinas de I/O</h2>
+								<img data-src="img/io.jpg">
+							</section>
+							<section>
+								<h4>1) O número de casos de testes é dado na primeira linha da entrada</h4>
+								<pre>
+								<code>
+		int TC, a, b; 
+		scanf("%d", &TC); 
+
+		while (TC--) {
+			scanf("%d %d", &a, &b);
+			printf("%d\n", a + b); 
+		}
+								</code>
+								</pre>
+							</section>
+							<section>
+								<h4>Exemplo</h4>
+								<img data-src="img/io1.png">
+							</section>
+							<section>
+								<h4>2) Múltiplos casos de testes terminam com um valor especial de entrada (geralmente zeros)</h4>
+								<pre>
+								<code>
+		int a, b;
+
+		while (scanf("%d %d", &a, &b), (a || b))
+			printf("%d\n", a + b);
+								</code>
+								</pre>
+							</section>
+							<section>
+								<h4>Exemplo 2</h4>
+								<img data-src="img/io2.png">
+							</section>
+							<section>
+								<h4>3) Múltiplos casos de testes terminam com EOF (fim de arquivo)</h4>
+								<pre>
+								<code>
+		int a, b;
+
+		while (scanf("%d %d", &a, &b) == 2) 
+			printf("%d\n", a + b);
+								</code>
+								</pre>
+								<pre>
+								<code>
+		int a, b;
+
+		while (scanf("%d %d", &a, &b) != EOF) 
+			printf("%d\n", a + b);
+								</code>
+								</pre>
+							</section>
+							<section>
+								<h4>Exemplos 3</h4>
+								<img data-src="img/io3.png">
+							</section>
+						</section>
+
+						<section>
+							<section>
+								<h2>Onde treinar</h2>
+								<img width="338" height="238" data-src="img/uri.png">	
+								<img width="538" height="218" data-src="img/codeforces.png">
+							</section>
+							<section>
+								<h2>Onde treinar</h2>
+								<img width="538" height="250" data-src="img/topcoder.png">
+								<img width="738" height="238" data-src="img/spoj.png">	
+							</section>
+							
+						</section>
+
+						<section>
+							<h3>Estrutura de dados em c++ e java</h3>
+							<img width="250" height="250" data-src="img/cpp_logo.png" style="transform: translateY(-70px) translateX(60px);">
+							<img width="438" height="438" data-src="img/javalogo.png" style="transform: translateX(100px);">
+							<p>
+								<small>Created by <a href="http://herodrigues.me">Herinson Rodrigues</b></a> </small>
+							</p>
+						</section>
+
+						<section>
+							<h3>Estrutura de dados</h3>
+							<p>Uma estrutura de dados é um meio de armazenar e organizar dados (não os da imagem!). Estes dados podem ser tipos de dados primitivos e tipos de dados abstratos</p>
+							<img width="350" height="350" data-src="img/dados.jpg">
+						</section>
+
+						<section>
+							<p>Embora uma estrutura de dados não consiga resolver um problema por ela mesma, é fundamental saber escolher a estrutura adequada para cada tipo de problema</p>
+							<img width="550" height="320" data-src="img/decisions.jpg">
+						</section>
+
+						<section>
+							<h3>No processo de design de um algoritmo, é importante levar em conta:</h3>
+							<ul>
+								<li>inserções</li>
+								<li>buscas</li>
+								<li>exclusões</li>
+								<li>queries</li>
+								<li>modificações</li>
+							</ul>
+						</section>
+
+
+						<section>
+							<section data-markdown>
+			                <script type="text/template">
+			###  Tipos primitivos de dados
+			<br>
+
+			|          |     |            |        |            |           |      |   | |
+			| ------------- |----------- |------------- |------------- |------------- |:-------------:|
+			| C++      | boolean | char      | int | float      | double | void      | &mdash; | &mdash; |
+			| Java      | bool | char      | int | float      | double | &mdash; | byte |  short |
+			
+			                </script>
+			              </section>
+						</section>
+
+						<section>
+							<h3>Limites dos dados primitivos</h3>
+							<p>Todos os tipos de dados primitivos possuem um intervalo de representação numérica</p>
+							<img width="350" height="350" data-src="img/restrictions.jpg">
+						</section>
+
+						<section>
+						<img width="150" height="150" data-src="img/cpp_logo.png" style="position:absolute; transform: translateY(240px) translateX(-720px);">
+						<table style="width: 100%; font-size: 24px;">
+		<tbody><tr>
+		<th>Tipo</th>
+		<th>Bit Width</th>
+		<th>Intervalo</th>
+		</tr>
+		<tr>
+		<td><a href="#"><b>char</b></a></td>
+		<td>1byte</td>
+		<td>-127 to 127 or 0 to 255</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>unsigned char</b></a></td>
+		<td>1byte</td>
+		<td>0 to 255</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>signed char</b></a></td>
+		<td>1byte</td>
+		<td>-127 to 127</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>int</b></a></td>
+		<td>4bytes</td>
+		<td>-2147483648 to 2147483647</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>unsigned int</b></a></td>
+		<td>4bytes</td>
+		<td>0 to 4294967295</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>signed int</b></a></td>
+		<td>4bytes</td>
+		<td>-2147483648 to 2147483647</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>short int</b></a></td>
+		<td>2bytes</td>
+		<td>-32768 to 32767</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>unsigned short int</b></a></td>
+		<td>Range</td>
+		<td>0 to 65,535</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>signed short int</b></a></td>
+		<td>Range</td>
+		<td>-32768 to 32767</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>long int</b></a></td>
+		<td>4bytes</td>
+		<td>-2,147,483,648 to 2,147,483,647</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>signed long int</b></a></td>
+		<td>4bytes</td>
+		<td>same as long int</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>unsigned long int</b></a></td>
+		<td>4bytes</td>
+		<td>0 to 4,294,967,295</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>float</b></a></td>
+		<td>4bytes</td>
+		<td>+/- 3.4e +/- 38 (~7 digits)</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>double</b></a></td>
+		<td>8bytes</td>
+		<td>+/- 1.7e +/- 308 (~15 digits)</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>long double</b></a></td>
+		<td>8bytes</td>
+		<td>+/- 1.7e +/- 308 (~15 digits)</td>
+		</tr>
+		<tr>
+		<td><a href="#"><b>wchar_t</b></a></td>
+		<td>2 or 4 bytes</td>
+		<td>1 wide character</td>
+		</tr>
+		</tbody></table>
+						</section>
+
+						<section>
+						<img width="240" height="240" data-src="img/javalogo.png" style="position:absolute; transform: translateY(180px) translateX(-780px);">
+						<table style="width: 100%; font-size: 24px;">
+		<tbody><tr>
+		<th>Tipo</th>
+		<th>Tamanho (bits)</th>
+		<th>min</th>
+		<th>max</th>
+		<th>Precisão</th>
+		</tr>
+		<tr>
+		<td><code><a href="/wiki/Java_Programming/Keywords/byte" title="Java Programming/Keywords/byte"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">byte</font></b></a></code></td>
+		<td>8</td>
+		<td>-128</td>
+		<td>127</td>
+		<td>From +127 to -128</td>
+		</tr>
+		<tr>
+		<td><code><a href="/wiki/Java_Programming/Keywords/char" title="Java Programming/Keywords/char"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">char</font></b></a></code></td>
+		<td>16</td>
+		<td>0</td>
+		<td>2<sup>16</sup>-1</td>
+		<td>All Unicode characters</td>
+		</tr>
+		<tr>
+		<td><code><a href="/wiki/Java_Programming/Keywords/short" title="Java Programming/Keywords/short"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">short</font></b></a></code></td>
+		<td>16</td>
+		<td>-2<sup>15</sup></td>
+		<td>2<sup>15</sup>-1</td>
+		<td>From +32,767 to -32,768</td>
+		</tr>
+		<tr>
+		<td><code><a href="/wiki/Java_Programming/Keywords/int" title="Java Programming/Keywords/int"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">int</font></b></a></code></td>
+		<td>32</td>
+		<td>-2<sup>31</sup></td>
+		<td>2<sup>31</sup>-1</td>
+		<td>From +2,147,483,647 to -2,147,483,648</td>
+		</tr>
+		<tr>
+		<td><code><a href="/wiki/Java_Programming/Keywords/long" title="Java Programming/Keywords/long"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">long</font></b></a></code></td>
+		<td>64</td>
+		<td>-2<sup>63</sup></td>
+		<td>2<sup>63</sup>-1</td>
+		<td>From +9,223,372,036,854,775,807 to -9,223,372,036,854,775,808</td>
+		</tr>
+		<tr>
+		<td><code><a href="/wiki/Java_Programming/Keywords/float" title="Java Programming/Keywords/float"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">float</font></b></a></code></td>
+		<td>32</td>
+		<td>2<sup>-149</sup></td>
+		<td>(2-2<sup>-23</sup>)·2<sup>127</sup></td>
+		<td>From 3.402,823,5&nbsp;E+38 to 1.4&nbsp;E-45</td>
+		</tr>
+		<tr>
+		<td><code><a href="/wiki/Java_Programming/Keywords/double" title="Java Programming/Keywords/double"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">double</font></b></a></code></td>
+		<td>64</td>
+		<td>2<sup>-1074</sup></td>
+		<td>(2-2<sup>-52</sup>)·2<sup>1023</sup></td>
+		<td>From 1.797,693,134,862,315,7&nbsp;E+308 to 4.9&nbsp;E-324</td>
+		</tr>
+		<tr>
+		<td><code><a href="/wiki/Java_Programming/Keywords/boolean" title="Java Programming/Keywords/boolean"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">boolean</font></b></a></code></td>
+		<td>1</td>
+		<td>--</td>
+		<td>--</td>
+		<td>false, true</td>
+		</tr>
+		</tbody></table>
+						</section>
+
+						<section style="text-align: justify;">
+							<h4>Quer dizer que só usar <b style="text-transform: lowercase;"><a>int</a></b> pra tudo não funciona?</h4>
+							<br>
+							<p>Não! Familiarize-se com esses limites:</p>
+							<ul>
+								<li>$2^{10} = 1,024 ≈ 10^3, 2^20 = 1,048,576 ≈ 10^6$</li>
+								<li>Inteiros de 32 bits com sinal (int) e inteiros de 64 bits com sinal (long long) possuem limites superiores de $2^{31}-1 ≈ 2*10^9$ e $2^{63}-1 ≈ 9*10^{18}$, respectivamente </li>
+								<li>Ou seja, é seguro usá-los para números de até 9 dígitos (para o int) e de até 18 dígitos (para o long long)</li>
+								<li>Para valores $\geq 2^{64}$, utilize a técnica Big Integer (próximas aulas)</li>
+							</ul>
+						</section>
+
+						<section style="font-size: 28px; text-align:justify;">
+							<section>
+							<h4>Para pensar...</h4>
+						 <p><i>Um número natural é um inteiro não-negativo $(0, 1, 2, 3, 4, 5,...)$. A sua tarefa neste problema é calcular a soma dos números naturais que estão presentes em um determinado intervalo $[A, B]$ inclusive.
+
+Por exemplo, a soma dos números naturais no intervalo $[2, 5]$ é $14 = (2+3+4+5)$.</i>
+						 </p>
+						 <p>Cada caso de teste contém dois inteiros $A$ e $B$ $(1 \leq A \leq B \leq 10^9)$, representando o limite inferior e o superior respectivamente.</p>
+						 <br>
+						 <table class="table-bordered">
+	                <thead>
+	                    <tr>
+	                        <td><b>Exemplo de Entrada</b></td>
+	                        <td><b>Exemplo de Saída</b></td>
+	                    </tr>
+	                </thead>
+	                <tbody>
+	                    <tr>
+	                        <td class="division">
+	                            <p>
+	                                1 10000<br>
+	                                1 5<br>
+	                                10 20<br></p>
+	                        </td>
+	                        <td>
+	                            <p>
+	                                500500<br>
+	                                15<br>
+	                                165<br></p>
+	                        </td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	            </section>
+
+	            <section style="text-align: justify;">
+	            		<p><h2>O quão grande é o número $1$$0^{9}$?</h2><br>
+	            		<h2>Que tipo de dado seria ideal para representar as variáveis A e B?</h2><br></p>
+	            		</ul>
+	            	</section>
+
+	            	<section style="text-align: center;">
+					A soma <br>$$\sum_{k=1}^{n} k = 1+2+...+n$$ <br>é uma série aritmética dada por<br> <br>$$\sum_{k=1}^{n} k = \frac{1}{2} n(n+1)$$<br>
+					E para um intervalo fechado temos<br><br>
+					$$\sum_{k=n_1}^{n_2} k = \frac{(n_2-n_1+1)(n_2+n_1)}{2}$$
 				</section>
 
-				<section>
-					<h2>Conteúdo</h2>
-					<ul>
-						<li>Introdução</li>
-						<li>Anatomia de um problema</li>
-						<li>Rotinas de I/O</li>
-						<li>Onde treinar</li>
-					</ul>
-				</section>
+	            <section style="font-size: 42px;">
+	            <h4>Solução em C</h4><br>
+    <pre><code data-trim data-noescape>
+#include &lt;stdio.h&gt;
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Introdução</h2>
-						<br>
-						<p>Fato: "<i>ACM-ICPC é uma competição de programação disputada</i>"</p>
-						<img width="638" height="338"  data-src="img/winners.jpg">
-					</section>
-					<section>
-						<h2>O que veremos pela frente?</h2>
-						<p><i>"Dado um conjunto de problemas bastante conhecidos em Ciência da Computação, seu trabalho é resolvê-los o mais rápido que você puder!"</i></p>
-						<img width="638" height="338"  data-src="img/typing.gif">
-					</section>
-					<section>
-						<h2>Como assim?</h2>
-						<ul>
-							<li>Os problemas já estão resolvidos</li>
-							<li>Pelo menos os <i>problem setters</i> já resolveram os problemas</li>
-						</ul>
-						<img width="538" height="278"  data-src="img/problem-solved.jpg">
-					</section>
-				</section>
+int main() {
+	long long n1, n2;
+	scanf("%lld %lld", &n1, &n2);
 
-				<section>
-					<section>
-						<h2>Anatomia de um problema</h2>
-						<img width="638" height="378"  data-src="img/anatomy.jpeg">
-					</section>
-					<section>
-						<h3>O problema</h3>
-						<img data-src="img/prob1.png">
-					</section>
-					<section>
-						<h3>Bullshit!</h3>
-						<img data-src="img/prob1-1.png">
-					</section>
-					<section>
-						<h3>Informações relevantes!</h3>
-						<img data-src="img/prob1-2.png">
-					</section>
-					<section>
-						<h3>Entrada e saída</h3>
-						<img data-src="img/prob2.png">
-					</section>
-					<section>
-						<h3>Restrições e exemplo de I/O</h3>
-						<img data-src="img/prob3.png">
-					</section>
-					<section>
-						<h2>O que isso significa?</h2>
-						<ul>
-							<li>Seu programa deve produzir a mesma saída que o <i>problem setter</i> produziu utilizando uma entrada secreta</li>
-							<li>Seu programa deve resolver o problema dentre um limite de tempo</li>
-						</ul>
-					</section>
-				</section>
+	long long sum = ((n2-n1+1) * (n2+n1))/2;
 
-				<section>
-					<section>
-						<h2>Rotinas de I/O</h2>
-						<img data-src="img/io.jpg">
-					</section>
-					<section>
-						<h4>1) O número de casos de testes é dado na primeira linha da entrada</h4>
-						<pre>
-						<code>
-int TC, a, b; 
-scanf("%d", &TC); 
+	printf("%lld\n", sum);
 
-while (TC--) {
-	scanf("%d %d", &a, &b);
-	printf("%d\n", a + b); 
+	return 0;
 }
-						</code>
-						</pre>
+    </code></pre>
+</section>
+</section>
+				<section>
+						<img width="860" height="560" data-src="img/problems.jpg">
 					</section>
-					<section>
-						<h4>Exemplo</h4>
-						<img data-src="img/io1.png">
-					</section>
-					<section>
-						<h4>2) Múltiplos casos de testes terminam com um valor especial de entrada (geralmente zeros)</h4>
-						<pre>
-						<code>
-int a, b;
 
-while (scanf("%d %d", &a, &b), (a || b))
-	printf("%d\n", a + b);
-						</code>
-						</pre>
-					</section>
 					<section>
-						<h4>Exemplo 2</h4>
-						<img data-src="img/io2.png">
-					</section>
-					<section>
-						<h4>3) Múltiplos casos de testes terminam com EOF (fim de arquivo)</h4>
-						<pre>
-						<code>
-int a, b;
+						<section>
+							<h2>Problema 1</h2><br>
+							<ul>
+								<li><a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1120">Revisão de Contrato - URI1120</a></li>
+							</ul>
+						</section>	
 
-while (scanf("%d %d", &a, &b) == 2) 
-	printf("%d\n", a + b);
-						</code>
-						</pre>
-						<pre>
-						<code>
-int a, b;
-
-while (scanf("%d %d", &a, &b) != EOF) 
-	printf("%d\n", a + b);
-						</code>
-						</pre>
-					</section>
-					<section>
-						<h4>Exemplos 3</h4>
-						<img data-src="img/io3.png">
-					</section>
+						<section style="font-size: 42px;">
+							<h4>Solução em C++</h4><br>
+						    <p><a href="https://github.com/maratonato/maratona-uft/blob/master/treinamentos/treinamento2/problema1.cpp">Revisão de Contrato</a></p><br>
+						    
+						    <h4>Solução em Java</h4><br>
+						    <p><a href="https://github.com/maratonato/maratona-uft/blob/master/treinamentos/treinamento2/Problema1.java">Revisão de Contrato</a></p>
+						</section>				
 				</section>
+
 
 				<section>
-					<section>
-						<h2>Onde treinar</h2>
-						<img width="338" height="238" data-src="img/uri.png">	
-						<img width="538" height="218" data-src="img/codeforces.png">
-					</section>
-					<section>
-						<h2>Onde treinar</h2>
-						<img width="538" height="250" data-src="img/topcoder.png">
-						<img width="738" height="238" data-src="img/spoj.png">	
-					</section>
-					
+						<section>
+							<h2>Problema 2</h2><br>
+							<ul>
+								<li><a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/1120">Jogando Cartas Fora - URI1110</a></li>
+							</ul>
+						</section>	
+
+						<section style="font-size: 42px;">
+							<h4>Solução em C++</h4><br>
+						    <p><a href="https://github.com/maratonato/maratona-uft/blob/master/treinamentos/treinamento2/problema2.cpp">Revisão de Contrato</a></p><br>
+						    
+						    <h4>Solução em Java</h4><br>
+						    <p><a href="https://github.com/maratonato/maratona-uft/blob/master/treinamentos/treinamento2/Problema2.java">Revisão de Contrato</a></p>
+						</section>				
 				</section>
 
-				<section>
-					<section>
-						<h2>Referências</h2>
-						<img width="308" height="400" data-src="img/adm.jpg"><br>
-						<i>"The Algorithm Design Manual"</i>, Steven Skiena
-					</section>
-					<section>
-						<h2>Referências</h2>
-						<img width="308" height="400" data-src="img/cp.jpg"><br>
-						<i>"Competitive Programming 3"</i>, Steve Halim e Felix Halim
-					</section>
-					<section>
-						<h2>Referências</h2>
-						<img width="308" height="400" data-src="img/pc.jpg"><br>
-						<i>"Programming Challenges"</i>, Steven Skiena e Miguel Revilla
-					</section>
-				</section>
-			</div>
+						<section>
+							<section>
+								<h2>Referências</h2>
+								<img width="308" height="400" data-src="img/adm.jpg"><br>
+								<i>"The Algorithm Design Manual"</i>, Steven Skiena
+							</section>
+							<section>
+								<h2>Referências</h2>
+								<img width="308" height="400" data-src="img/cp.jpg"><br>
+								<i>"Competitive Programming 3"</i>, Steve Halim e Felix Halim
+							</section>
+							<section>
+								<h2>Referências</h2>
+								<img width="308" height="400" data-src="img/pc.jpg"><br>
+								<i>"Programming Challenges"</i>, Steven Skiena e Miguel Revilla
+							</section>
+						</section>
+					</div>
 
-		</div>
+				</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+				<script src="lib/js/head.min.js"></script>
+				<script src="js/reveal.js"></script>
 
-		<script>
+				<script>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+					// Full list of configuration options available at:
+					// https://github.com/hakimel/reveal.js#configuration
+					Reveal.initialize({
+						controls: true,
+						progress: true,
+						history: true,
+						center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+						transition: 'slide', // none/fade/slide/convex/concave/zoom
+						math: {
+					        mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					        config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					    },
+						// Optional reveal.js plugins
+						dependencies: [
+							{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+							{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+							{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+							{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+							{ src: 'plugin/zoom-js/zoom.js', async: true },
+							{ src: 'plugin/notes/notes.js', async: true },
+					        { src: 'plugin/math/math.js', async: true }
+						]
+					});
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+				</script>
 
-		</script>
-
-	</body>
-</html>
+			</body>
+		</html>
