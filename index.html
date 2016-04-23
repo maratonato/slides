@@ -124,13 +124,13 @@
 								<h4>1) O número de casos de testes é dado na primeira linha da entrada</h4>
 								<pre>
 								<code>
-		int TC, a, b; 
-		scanf("%d", &TC); 
+int TC, a, b; 
+scanf("%d", &TC); 
 
-		while (TC--) {
-			scanf("%d %d", &a, &b);
-			printf("%d\n", a + b); 
-		}
+while (TC--) {
+	scanf("%d %d", &a, &b);
+	printf("%d\n", a + b); 
+}
 								</code>
 								</pre>
 							</section>
@@ -142,10 +142,10 @@
 								<h4>2) Múltiplos casos de testes terminam com um valor especial de entrada (geralmente zeros)</h4>
 								<pre>
 								<code>
-		int a, b;
+int a, b;
 
-		while (scanf("%d %d", &a, &b), (a || b))
-			printf("%d\n", a + b);
+while (scanf("%d %d", &a, &b), (a || b))
+	printf("%d\n", a + b);
 								</code>
 								</pre>
 							</section>
@@ -157,18 +157,18 @@
 								<h4>3) Múltiplos casos de testes terminam com EOF (fim de arquivo)</h4>
 								<pre>
 								<code>
-		int a, b;
+int a, b;
 
-		while (scanf("%d %d", &a, &b) == 2) 
-			printf("%d\n", a + b);
+while (scanf("%d %d", &a, &b) == 2) 
+	printf("%d\n", a + b);
 								</code>
 								</pre>
 								<pre>
 								<code>
-		int a, b;
+int a, b;
 
-		while (scanf("%d %d", &a, &b) != EOF) 
-			printf("%d\n", a + b);
+while (scanf("%d %d", &a, &b) != EOF) 
+	printf("%d\n", a + b);
 								</code>
 								</pre>
 							</section>
@@ -410,7 +410,7 @@
 							<br>
 							<p>Não! Familiarize-se com esses limites:</p>
 							<ul>
-								<li>$2^{10} = 1,024 ≈ 10^3, 2^20 = 1,048,576 ≈ 10^6$</li>
+								<li>$2^{10} = 1,024 ≈ 10^3, 2^{20} = 1,048,576 ≈ 10^6$</li>
 								<li>Inteiros de 32 bits com sinal (int) e inteiros de 64 bits com sinal (long long) possuem limites superiores de $2^{31}-1 ≈ 2*10^9$ e $2^{63}-1 ≈ 9*10^{18}$, respectivamente </li>
 								<li>Ou seja, é seguro usá-los para números de até 9 dígitos (para o int) e de até 18 dígitos (para o long long)</li>
 								<li>Para valores $\geq 2^{64}$, utilize a técnica Big Integer (próximas aulas)</li>
